@@ -36,6 +36,7 @@ body {
   margin: 0;
   font: 16px/1.6em "Open Sans", sans-serif;
   color: var(--dark);
+  overflow-x: hidden;
 }
 
 h1,
@@ -133,13 +134,42 @@ h3 {
 .video-section {
   display: flex;
   justify-content: center;
+  background-color: var(--white);
+
+ 
+}
+
+.video-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.video-title {
+  margin-bottom: 30px;
+}
+
+.video-description {
+  margin: 0 0 30px;
 }
 
 /* (3rd) NAVIGATION */
 
 #navigation {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
+  margin-top: -100px;
+  background-color: var(--main-dark);
+}
+
+.nav-container {
+  padding: 200px 0 100px;
 }
 
 /* (4th) IKEA EFFECT */

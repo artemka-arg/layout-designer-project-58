@@ -1,7 +1,128 @@
 /** CSS STYLE **/
 
-.hello {
-  display: block;
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
 
-  color: #fff;
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neucha";
+  src: url("../fonts/Neucha-Regular.ttf") format("truetype");
+}
+
+:root {
+  --h1: 72px;
+  --h2: 60px;
+  --h3: 34px;
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #FE8A02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+body {
+  font: 16px/1.6em "Open Sans", sans-serif;
+
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  font-family: "Neucha", serif;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+.container {
+  width: 1110px;
+  padding: 100px 0;
+}
+
+/* (1st) HEADER SECTION */
+
+.header-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* (2nd) VIDEO SECTION */
+
+.video-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* (3rd) NAVIGATION */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+/* (4th) IKEA EFFECT */
+
+.ikea-effect {
+  display: flex;
+  justify-content: center;
+}
+
+/* (5th) PREMATURE OPTIMIZATION */
+
+.premature-optimization {
+  display: flex;
+  justify-content: center;
+}
+
+/* (6th) DISTORTION OF NOVELTY */
+
+.distortion-of-novelty {
+  display: flex;
+  justify-content: center;
+}
+
+/* (7th) HYPERBOLIC DEPRECIATION */
+
+.hyperbolic-depreciation {
+  display: flex;
+  justify-content: center;
+}
+
+/* (8th) ERRORS IN PLANNING */
+
+.errors-in-planning {
+  display: flex;
+  justify-content: center;
+}
+
+/* (9th) FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: center;
 }

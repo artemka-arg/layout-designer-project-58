@@ -386,6 +386,10 @@ h3 {
 
 /* REUSED STYLES */
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-20 {
   margin: 0 0 20px;
 }

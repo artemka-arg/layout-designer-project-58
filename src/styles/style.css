@@ -291,13 +291,33 @@ ul {
 /* (5th) PREMATURE OPTIMIZATION */
 
 #premature-optimization {
+  position: relative;
   display: flex;
   justify-content: center;
+  
+}
+
+.bg-brown {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.translucent-white {
+  color: var(--translucent-white);
+}
+
+.brown {
+  color: var(--brown);
 }
 
 /* (6th) DISTORTION OF NOVELTY */
 
 #distortion-of-novelty {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -305,6 +325,7 @@ ul {
 /* (7th) HYPERBOLIC DEPRECIATION */
 
 #hyperbolic-depreciation {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -312,6 +333,7 @@ ul {
 /* (8th) ERRORS IN PLANNING */
 
 #errors-in-planning {
+  position: relative;
   display: flex;
   justify-content: center;
 }

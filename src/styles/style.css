@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: "Neucha";
+  font-family: Neucha;
   src: url("../fonts/Neucha-Regular.ttf") format("truetype");
 }
 
@@ -24,7 +24,7 @@
   --white: #fff;
   --translucent-white: #d7ccc0;
   --light: #f5f4f0;
-  --main: #FE8A02;
+  --main: #fe8a02;
   --main-dark: #42413c;
   --dark: #2a2626;
   --translucent-dark: #908d8b;
@@ -40,7 +40,6 @@ body {
   margin: 0;
   font: 16px/1.6em "Open Sans", sans-serif;
   color: var(--dark);
-  overflow-x: hidden;
 }
 
 h1,
@@ -48,7 +47,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-  font-family: "Neucha", serif;
+  font-family: Neucha, serif;
   line-height: 1.2em;
   color: var(--main);
 }
@@ -77,6 +76,7 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   background-color: var(--light);
 }
 
@@ -107,7 +107,7 @@ h3 {
   display: flex;
   justify-content: center;
   column-gap: 30px;
-  padding-top: 165px;
+  padding-top: 185px;
 }
 
 .column-left {
@@ -149,11 +149,16 @@ h3 {
 }
 
 .video-title {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .video-description {
   margin: 0 0 30px;
+}
+
+.video {
+  border: 0;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /* (3rd) NAVIGATION */
@@ -196,7 +201,7 @@ h3 {
   display: block;
   margin-bottom: 40px;
   font-size: 64px;
-  font-family: "Neucha", serif;
+  font-family: Neucha, serif;
   line-height: 1;
 }
 
@@ -221,14 +226,13 @@ h3 {
 .top-cols {
   display: flex;
   column-gap: 30px;
-  font-family: "Neucha", serif;
+  font-family: Neucha, serif;
   line-height: 1.2;
-  
 }
 
 .top-col-img {
   vertical-align: middle;
-  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 32px 0 #00000026;
 }
 
 .top-col-subtitle {
@@ -271,7 +275,6 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
-  
 }
 
 .bg-brown {
@@ -288,6 +291,7 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: var(--light);
 }
 
 /* (7th) HYPERBOLIC DEPRECIATION */
@@ -304,6 +308,7 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: var(--light);
 }
 
 /* (9th) FOOTER */
@@ -362,7 +367,7 @@ h3 {
   right: 23px;
   display: block;
   width: 24px;
-  height: 24px; 
+  height: 24px;
   background-image: url("../img/send.svg");
   content: "";
 }

@@ -343,6 +343,7 @@ h3 {
   font: 13.1px/1.6 "Open Sans", sans-serif;
   font-size: 13.1px;
   color: #757575;
+  opacity: 0.2;
 }
 
 .form-button {

@@ -195,8 +195,8 @@ ul {
   margin: 0;
 }
 
-.col-3 li {
-  width: 350px;
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .nav-title {
@@ -204,24 +204,32 @@ ul {
   color: var(--white);
 }
 
-.nav-item {
-  padding: 24px;
-  background-color: var(--light);
-}
-
 .nav-link {
   color: var(--dark);
 }
 
+.nav-item {
+  height: 100%;
+  width: 350px;
+  padding: 24px;
+  background-color: var(--light);
+}
+
 .card-number {
+  display: block;
   margin-bottom: 40px;
   font-size: 64px;
   font-family: "Neucha", serif;
   line-height: 1;
 }
 
-.nav-item p {
-  margin-bottom: 0;
+.nav-item:hover {
+  color: var(--white);
+  background-color: var(--main);
+}
+
+.nav-item:hover > h3 {
+  color: var(--white);
 }
 
 /* (4th) IKEA EFFECT */
